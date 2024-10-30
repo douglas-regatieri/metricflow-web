@@ -173,3 +173,45 @@ body,
 .navbar-dark {
     background-color: #2b364a !important;
 }
+
+/* Media query para telas menores que 768px (mobile) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        width: 100%; /* Ajusta a largura para 100% */
+        padding: 1rem; /* Reduz o padding */
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Ajusta a largura das colunas para 100% */
+    }
+
+    .navebar {
+        flex-direction: column; /* Muda a direção da navbar para coluna */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .navebar nav {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    .navebar ul {
+        flex-direction: column; /* Muda a direção da lista para coluna */
+    }
+
+    .navebar ul li {
+        margin-right: 0; /* Remove a margem direita */
+        margin-bottom: 10px; /* Adiciona margem inferior */
+    }
+
+    .footer-content {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte no footer */
+    }
+}
+
+/* Media query para telas maiores que 768px (desktop) */
+@media (min-width: 769px) {
+    .content-wrapper {
+        flex-direction: row; /* Mantém a direção para linha em telas maiores */
+    }
+}
